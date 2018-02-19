@@ -1,0 +1,22 @@
+// Helper classes
+
+// Disable pointer
+.pe-none {
+  pointer-events: none;
+}
+
+// Text and background color generator
+@each $color, $value in $css-colors {
+  .bg-#{$color} {
+    background-color: $value;
+  }
+
+  .color-#{$color} {
+    color: $value;
+  }
+}
+
+img {
+  width: 100%;
+  height: auto;
+}

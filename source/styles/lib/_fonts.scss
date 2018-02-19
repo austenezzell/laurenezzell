@@ -1,0 +1,36 @@
+// Font settings
+
+@mixin font {
+  // sass-lint:disable-block indentation
+  $_path: '/assets/fonts/PT_Sans/';
+  $font-regular: 'PT_Sans-Regular';
+  $font-bold: 'PT_Sans-Bold';
+
+  @font-face {
+    font-family: 'PT Sans';
+    src: url('#{$_path}#{$font-regular}.woff') format('woff'),
+      url('#{$_path}#{$font-regular}.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'PT Sans Bold';
+    src: url('#{$_path}#{$font-bold}.woff') format('woff'),
+      url('#{$_path}#{$font-bold}.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+@mixin regular-font {
+  font-family: 'Work Sans', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+}
+
+@mixin bold-font {
+  font-family: 'Work Sans', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}

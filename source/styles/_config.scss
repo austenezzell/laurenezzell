@@ -1,0 +1,26 @@
+// App config
+// sass-lint:disable indentation
+
+$font-size: 24px;
+$font-scaling: 1.25;
+$line-height: 1.4;
+$line-height--heading: 1;
+
+$spacing: $based_spacing * 2; //see config.based
+$breakpoints: $based_grid-breakpoints; //see config.based
+
+$color-black: #000;
+$color-primary: #EEDEE1;
+$color-secondary: #79B2CE;
+$color-bright-blue: #0085FF;
+
+$css-colors: (
+    dark: $color-black,
+    lite: $color-black,
+    primary: $color-primary,
+    secondary: $color-secondary,
+    error: $color-secondary,
+    success: #3eed33,
+    warning: #ede233
+  )
+  !default;
